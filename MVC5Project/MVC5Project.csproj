@@ -165,6 +165,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -179,6 +180,20 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MVC5Project.DataAccess\MVC5Project.DataAccess.csproj">
+      <Project>{3ca7ff23-391d-48b1-9d09-4ae5c379ebfa}</Project>
+      <Name>MVC5Project.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MVC5Project.Models\MVC5Project.Models.csproj">
+      <Project>{59a913b7-b885-4f80-b546-a9155b3524f1}</Project>
+      <Name>MVC5Project.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MVC5Project.Utility\MVC5Project.Utility.csproj">
+      <Project>{fe2e9ae7-4f0c-4d6b-bb53-55150bae39ce}</Project>
+      <Name>MVC5Project.Utility</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
